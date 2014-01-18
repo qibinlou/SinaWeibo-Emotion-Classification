@@ -10,11 +10,39 @@ from transwarp.web import ctx, get, post, route, seeother, forbidden, jsonresult
 from transwarp import db
 
 from weibo import APIError, APIClient
-import pickle, random, jieba, nltk, jieba.analyse
+import pickle, random, jieba,jieba.analyse
 import StringIO
+try:
+  	import pylibmc
+except Exception,e:
+    pass
+try:
+   import nltk
+except Exception, e:
+   print e
+   try:
+       from nltk import FreqDist
+       import nltk.NaiveBayesClassifier
+   except Exception, e:
+       pass 
+   
+
+#import nltk
 
 _TD_ZERO = timedelta(0)
 _TD_8 = timedelta(hours=8)
+
+#using memcache
+#mc = pylibmc.Client()
+
+#mc.set('test','testyourmoathaf')
+#mc.incr('test')
+#word_features = mc.get('word_features')
+#classifier = mc.get('classifier')
+#if not mc.get('word_features'):
+ #   word_features = pickle.load(open('word_features.dat','r'))
+  #  mc.set("word_features", str(word_features) )
+
 word_features = pickle.load(open('word_features.dat','r'))
 classifier = pickle.load(open("classifierdata.dat","r"))
 
@@ -80,8 +108,9 @@ def _format_weibo(st):
 @get('/')
 def index():
     u = _check_cookie()
+    #return Template('./static/signin.html')
     if u is None:
-        return Template('static/signin.html')
+        return Template('./static/signin.html')
     return Template('static/myweibo.html', user=u)
 
 
