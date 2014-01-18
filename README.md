@@ -22,6 +22,9 @@ SinaWeibo-Emotion-Classification
 5. 回到首页登陆即可使用
 6. SAE环境下配置类似1~5步
 
+###应用Demo图
+!['website demo image'](http://tobeornottobe.sinaapp.com/static/i/home.jpg)
+
 ###反馈意见
 * 邮件联系我：qibinlou#hotmail.com(#用@代替)
 * 在Github本项目下发起issue讨论
