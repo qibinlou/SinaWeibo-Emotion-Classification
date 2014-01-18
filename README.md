@@ -25,5 +25,6 @@ SinaWeibo-Emotion-Classification
 ###反馈意见
 * 邮件联系我：qibinlou#hotmail.com(#用@代替)
 * 在Github本项目下发起issue讨论
+
 ###Licence
-MIT
+**MIT**
