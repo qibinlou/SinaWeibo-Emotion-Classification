@@ -62,23 +62,23 @@
 
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>如何使用</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>
+  <ol>
+    <li>Python依赖包：`nltk`,`jieba`,`jinja2`,`transwarp`,`pickle`
+    <li>本地开发环境下，首先将init.sql中的数据库配置导入MySQL数据库中，修改devapp.py文件中的mysql配置数据</li>
+    <li>申请Sina Weibo 应用，获取app id和app secret key，修改应用的回调地址为`http://127.0.0.1:8080/callback`</li>
+    <li>在本项目根目录命令行下运行：`python devapp.py`，在浏览器中输入`127.0.0.1：8080`即可看到首页</li>
+    <li>在`127.0.0.1:8080/admin`，密码是`admin`，中修改APP id 和APP secret key</li>
+    <li>回到首页登陆即可使用</li>
+    <li>SAE环境下配置类似1~5步</li>
+  </ol>
+</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
+<div>
+  <img src="http://tobeornottobe.sinaapp.com/static/i/home.jpg" alt="demo img" title="demo img">
+</div>
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
 
