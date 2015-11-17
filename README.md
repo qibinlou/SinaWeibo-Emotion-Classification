@@ -2,6 +2,7 @@ SinaWeibo-Emotion-Classification
 ================================
 
 ##新浪微博情感分析应用
+> Update：本项目由于长久未更新以及新浪微博接口变动等问题已无法正常使用，仅作参考
 
 ####应用地址：http://tobeornottobe.sinaapp.com
 ####应用Github主页：http://qibinlou.github.io/SinaWeibo-Emotion-Classification/ 
